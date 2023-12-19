@@ -75,6 +75,22 @@ function Header() {
         <input type="text"  placeholder='Buscar pelicula' onChange={(e)=> setSearchkey(e.target.value)}/>
          <button>Buscar</button> 
       
+      {/* <main>
+        {movie ? (
+          <div className='vertrailer' style={{backgroundImage: `url("${IMGAGE_PATH}${movie.backdrop.path}")`,}}>
+
+            {playing ? (
+              <>
+              <YouTube
+                video.id={trailer.key}>
+              </YouTube>
+              </>
+            )}
+
+
+          </div>
+        )}
+      </main> */}
 
       </form>
       <div className="pelis ">
@@ -88,9 +104,7 @@ function Header() {
       </div>
       </div>
     </div>
-    <main>
-
-    </main>
+    
       </>
     );
   
