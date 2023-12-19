@@ -68,46 +68,38 @@ function Header() {
     
     return (
       <>
-      <div className='main'>
-    <div className="containe ">
+
+      
+
+    <main className='main'>
+      
+    <div className="container ">
       <h2 className='centrado'>Trailer Movies</h2> 
        <form onSubmit={searchMovies}>
         <input type="text"  placeholder='Buscar pelicula' onChange={(e)=> setSearchkey(e.target.value)}/>
          <button>Buscar</button> 
-      
-      {/* <main>
-        {movie ? (
-          <div className='vertrailer' style={{backgroundImage: `url("${IMGAGE_PATH}${movie.backdrop.path}")`,}}>
-
-            {playing ? (
-              <>
-              <YouTube
-                video.id={trailer.key}>
-              </YouTube>
-              </>
-            )}
-
-
-          </div>
-        )}
-      </main> */}
-
       </form>
-      <div className="pelis ">
-        {movies.map((movie)=>(
-          <div key={movie.id} className="img">
-            <img src={`${URL_IMAGE + movie.poster_path}`} alt="" height={500} width="300px"/>
-            <h4 className="centrado">{movie.title}</h4>
-            {/* <p className='centrado'>{movie.overview}</p> */}
-          </div>
-        ))}
-      </div>
-      </div>
+
+      
+      
+        <div className="pelis ">
+          {movies.map((movie)=>(
+            <div key={movie.id} className="img">
+              <img src={`${URL_IMAGE + movie.poster_path}`} alt="" height={500} width="300px"/>
+              <h4 className="center">{movie.title}</h4>
+              {/* <p className='centrado'>{movie.overview}</p> */}
+            </div>
+          ))}
+        </div>
     </div>
-    
+      
+      </main>
+
       </>
+      
+      
     );
   
     }
 
-    export default Header
+    export default Header;
