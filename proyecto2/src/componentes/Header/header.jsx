@@ -3,7 +3,7 @@ import axios from 'axios';
 import React, { useEffect, useState } from "react";
 import YouTube from 'react-youtube';
 
-function Header() {
+function header() {
 
   const API_URL = 'https://api.themoviedb.org/3'
   const API_KEY = '2a91d76fc5e37e78e76691612a9b9866'
@@ -71,7 +71,7 @@ function Header() {
 
       
 
-    <main className='main'>
+    {/* <main className='main'>
       
     <div className="container ">
       <h2 className='centrado'>Trailer Movies</h2> 
@@ -88,12 +88,12 @@ function Header() {
               <img src={`${URL_IMAGE + movie.poster_path}`} alt="" height={500} width="300px"/>
               <h4 className="center">{movie.title}</h4>
               {/* <p className='centrado'>{movie.overview}</p> */}
-            </div>
+            {/* </div>
           ))}
         </div>
     </div>
       
-      </main>
+      </main> */} 
 
       </>
       
@@ -102,4 +102,4 @@ function Header() {
   
     }
 
-    export default Header;
+    export default header;
